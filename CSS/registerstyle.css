@@ -7,7 +7,7 @@
     align-items: center;
     height: 100vh;
 }
-.container{
+#registerform{
     background-color: white;
     padding: 20px;
     width: 300px;
@@ -17,10 +17,6 @@
 h2{
     text-align: center;
     margin-bottom: 20px;
-}
-.form-group{
-    margin-bottom: 15px;
-
 }
 label{
     display: block;
@@ -35,12 +31,7 @@ input{
 input:focus{
     border-color: blue;
     outline: none;
-}
-.error{
-    color: red;
-    font-size: 12px;
-}
-button{
+}button{
     width: 97%;
     padding: 10px;
     background-color: blue;
@@ -51,18 +42,4 @@ button{
 }
 button:hover{
     opacity: 0.9;
-}
-#back{
-   margin-top: 20px;
-   width: 97%;
-   padding: 10px;
-   background-color: forestgreen;
-
-}
-#back a{
-    text-decoration: none;
-    color: white;
-}
-p{
-    font-size: small;
 }

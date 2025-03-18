@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../CSS/style.css" />
 
     <!-- google font Link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
-    />
+    /> -->
 
     <!-- font Awesome icons Link -->
     <link
@@ -33,8 +33,11 @@
       <div class="navbar-links">
         <p class="navbar-link"><a href="index.html">Home</a></p>
         <p class="navbar-link"><a href="collection.html">Collections</a></p>
-        <p class="navbar-link"><a href="#">Contacts</a></p>
-        <p class="navbar-link"><a href="login.html"> <h5 id="userprofile" style="color: green; text-transform: uppercase;"></h5> <i class="fa-solid fa-user"></i></a></p>
+        <p class="navbar-link"><abbr title="FlyCart.com"><a href="#">Contacts</a></abbr></p>
+        <p class="navbar-link"><a href="../Login/login.html">  <abbr title="Login"><i class="fa-solid fa-user" id="u"></i></abbr></a></p>
+        <form action="" id="logoutpage">
+        <button type="reset" >Logout</button>
+        </form>
       </div>
 
       <div class="navbar-menu-toggle" onclick="showNavbar()">
@@ -52,9 +55,12 @@
         <p class="side-navbar-link"><a href="index.html">Home</a></p>
         <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
         <p class="side-navbar-link"><a href="#">Contacts</a></p>
-        <p class="navbar-link"><a href="login.html">Login <i class="fa-solid fa-user"></i> <h5 id="userprofile" style="color: green; text-transform: uppercase;"></h5> </a></p>
-
+        <p class="navbar-link"><a href="../Login/login.html">Login <abbr title="Login"><i class="fa-solid fa-user" id="u"></i></abbr>   </a></p>
+ 
       </div>
+        <form action="" id="logout">
+        <button type="reset" >Logout</button>
+        </form>
 
 
     </div>
@@ -218,15 +224,16 @@
         Sinup for our email newsletter to get exclusive discounts and updates
         and more 
       </p>
-      <a href="login.html" style="color: blue; text-decoration: none;">Go to Login page...</a>
+      <a href="../Login/login.html" style="color: blue; text-decoration: none;">Go to Login page...</a>
 
-      <div>
-        <input type="text" class="search" placeholder="Enter Name"  id="input" required/>
-      </div>
+      <form action="" id="namebutton">
+        <input type="textarea" class="search" placeholder="Enter Name"  id="input" required/>
+         <button >submit <i class="fa-solid fa-arrow-right"></i></button>
+      </form>
 
-      <div>
+      <!-- <div>
         <button id="namebutton">submit <i class="fa-solid fa-arrow-right"></i></button>
-      </div>
+      </div> -->
     </div>
 
     <!-- Footer -->
@@ -252,5 +259,6 @@
 
     <!-- script -->
     <script src="../Javascript/script.js"></script>
+    <!-- <script src="../Javascript/logout.js"></script> -->
   </body>
 </html>

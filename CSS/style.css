@@ -34,13 +34,24 @@ body{
   color: palevioletred;
 }
 
+#logoutpage button{
+    padding: 4px;
+    background-color: #1D232C;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+    text-align: center;
+}
+#u{
+    color: green;
+}
 
 
 /* side-navbar */
 .side-navbar{
     background-color: #1D232C;
     width: 50%;
-    height: 60%;
+    height: 64%;
     position: fixed;
     top: 0;
     left: o;
@@ -62,6 +73,24 @@ body{
 .side-navbar-links a:hover{
     text-decoration: underline;
 }
+
+/* .side-navbar form{
+    padding: 20px;
+    left: -10%;
+} */
+#logout{
+    padding: 20px 0px;
+ 
+}
+#logout button{
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+    transition: .3s ease;
+    background: blue;
+    color: white;
+}
+
 
  
 

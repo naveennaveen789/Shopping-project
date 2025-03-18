@@ -1,50 +1,57 @@
 let sidenav = document.querySelector(".side-navbar");
-// let useless = document.querySelector('.navbar-menu-toggle')
-
-// console.log(sidenav);
-
- sidenav.style.left = "-60%";
+ 
+sidenav.style.left = "-60%";
 
 function showNavbar() {
   sidenav.style.left = "0%";
-  console.log("ok");
+  console.log("moveright");
 }
 
 // useless = !closeNavbar
 function closeNavbar() {
   sidenav.style.left = "-60%";
-  console.log("done");
-
+  console.log("moveleft");
 }
-
-
-
-
-
 
 // User
+ 
 
-let addbtn = document.getElementById("namebutton");
-let showtext = document.getElementById("userprofile");
 
-addbtn.onclick = function () {
-  userdetails();
-};
+document.getElementById('namebutton').addEventListener("submit" ,(e) => {
+  e.preventDefault();
 
-// del.onclick = function() {
-//     localStorage.clear();
-// }
-function userdetails() {
-  // alert("hi")
   let inputName = document.getElementById("input").value;
 
-  localStorage.setItem("username ", inputName);
-  showtext.textContent = inputName;
-}
+   if(inputName && inputName === "" ){
+      alert("User Request sending successfully!")
 
-if (!localStorage.getItem("username")) {
-  userdetails();
-} else {
-  var name = localStorage.getItem("username");
-  showtext.textContent = inputName;
-}
+    }else{
+      alert("we need your experince and morethen information , Thank you for the information ! ")
+      return
+      
+    }
+
+})
+
+///reset or logout
+
+let reset = document.getElementById("logoutpage").addEventListener("reset", (e) => {
+    e.preventDefault();
+    console.log("clicked");
+
+    alert("User Logout Conformation !");
+
+    localStorage.clear();
+
+    document.location.href = "../Login/login.html";
+  });
+//sidenav-bar
+document.getElementById('logout').addEventListener("reset", (e) => {
+  e.preventDefault();
+  
+   alert("User Logout Conformation !");
+  localStorage.clear();
+  console.log("clicked");
+
+  document.location.href = '../Login/login.html'
+})
