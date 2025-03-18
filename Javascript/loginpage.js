@@ -3,6 +3,8 @@ document.getElementById("Loginform").addEventListener("submit" ,(e) => {
 
     let userEmail = document.getElementById("email").value
     let password = document.getElementById("password").value
+    // console.log(password);
+    
 
     let storePassword = localStorage.getItem(userEmail)
 
